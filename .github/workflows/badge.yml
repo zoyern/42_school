@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write  # Cette ligne est cruciale
+
 jobs:
   update-badge:
     runs-on: ubuntu-latest
@@ -12,7 +15,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Important : récupère tout l'historique
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}  # Ajoute aussi cette ligne
 
       - name: Count commits
         id: count
