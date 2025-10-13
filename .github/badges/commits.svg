@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="28">
-  <rect width="65" height="28" fill="#555"/>
-  <rect x="65" width="55" height="28" fill="#4c1"/>
-  <text x="32.5" y="18" fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="12" text-anchor="middle">commits</text>
-  <text x="92.5" y="18" fill="#fff" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="12" text-anchor="middle" font-weight="bold">11</text>
-</svg>
