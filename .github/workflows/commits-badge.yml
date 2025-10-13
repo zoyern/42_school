@@ -1,0 +1,34 @@
+name: Total Commits Badge
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  badge:
+    runs-on: ubuntu-latest
+    steps:
+      # Vérifie le repo
+      - uses: actions/checkout@v3
+
+      # Compte tous les commits
+      - name: Count total commits
+        id: count
+        run: |
+          total=$(git rev-list --count HEAD)
+          echo "total_commits=$total" >> $GITHUB_OUTPUT
+
+      # Crée le badge SVG
+      - name: Create badge
+        run: |
+          mkdir -p badges
+          echo "![Commits](https://img.shields.io/badge/42_school_projects-${{ steps.count.outputs.total_commits }}-blue?style=for-the-badge)" > badges/commits.svg
+
+      # Commit et push le badge dans le repo
+      - name: Commit badge
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add badges/commits.svg
+          git commit -m "Update total commits badge" || echo "No changes to commit"
+          git push
