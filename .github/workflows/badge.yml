@@ -1,0 +1,59 @@
+name: Generate Badge
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  generate-badge:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout du repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Compter tous les commits
+      - name: Count total commits
+        id: commits
+        run: |
+          total=$(git rev-list --count HEAD)
+          echo "total_commits=$total" >> $GITHUB_OUTPUT
+
+      # 3. Générer un SVG simple avec le nombre de commits
+      - name: Create badge SVG
+        run: |
+          mkdir -p badges
+          cat <<EOF > badges/42_school_projects.svg
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="20">
+  <rect width="150" height="20" fill="#555"/>
+  <text x="75" y="14" font-family="Verdana" font-size="11" fill="#fff" text-anchor="middle">
+    42_school_projects: ${{ steps.commits.outputs.total_commits }} commits
+  </text>
+</svg>
+EOF
+
+      # 4. Checkout du repo `badges`
+      - name: Checkout badges repo
+        uses: actions/checkout@v3
+        with:
+          repository: zoyern/badges
+          path: badges-repo
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 5. Copier le badge dans le repo `badges`
+      - name: Copy badge to badges repo
+        run: |
+          cp badges/42_school_projects.svg badges-repo/42_school_projects.svg
+
+      # 6. Commit et push le badge
+      - name: Commit and push
+        run: |
+          cd badges-repo
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add 42_school_projects.svg
+          git commit -m "Update 42_school_projects badge [skip ci]" || echo "No changes"
+          git push
