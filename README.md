@@ -5,7 +5,7 @@
   <!--------------------------->
   <tr>
     <td colspan=" 3" align="left" style="padding:5px;">
-		<img src="https://raw.githubusercontent.com/zoyern/badges/main/icon.gif" height="64">
+		<img src="https://raw.githubusercontent.com/zoyern/zoyern/main/assets/images/icon.gif" height="64">
 		</td>
 		</tr>
 		<!--------------------------->
@@ -43,7 +43,7 @@
 		<!-- Séparateur -->
 		<tr>
 			<td colspan="3">
-				<img src="https://raw.githubusercontent.com/zoyern/badges/main/sep.gif" width="100%" height="10">
+				<img src="https://raw.githubusercontent.com/zoyern/zoyern/main/assets/images/sep.gif" width="100%" height="10">
 			</td>
 		</tr>
 		<!--------------------------->
@@ -59,7 +59,7 @@
 		<!--------------------------->
 		<tr>
 			<td colspan="3">
-				<img src="https://raw.githubusercontent.com/zoyern/badges/main/banner.gif" width="100%" height="150px">
+				<img src="https://raw.githubusercontent.com/zoyern/zoyern/main/assets/images/banner.gif" width="100%" height="150px">
 			</td>
 		</tr>
 		<!--------------------------->
@@ -78,7 +78,7 @@
 		<!-- Séparateur -->
 		<tr>
 			<td colspan="3">
-				<img src="https://raw.githubusercontent.com/zoyern/badges/main/sep.gif" width="100%" height="10">
+				<img src="https://raw.githubusercontent.com/zoyern/zoyern/main/assets/images/sep.gif" width="100%" height="10">
 			</td>
 		</tr>
 </table>
