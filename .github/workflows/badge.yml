@@ -29,7 +29,7 @@ jobs:
           COMMIT_COUNT=${{ steps.count.outputs.count }}
           mkdir -p zoyern-repo/assets/badges
           cat > zoyern-repo/assets/badges/42_school_commits.svg << EOF
-          <svg xmlns="http://www.w3.org/2000/svg" width="180" height="28">
+          <svg xmlns="http://www.w3.org/2000/svg" width="150" height="30">
             <defs>
               <!-- Dégradé partie gauche -->
               <linearGradient id="gradLeft" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -50,23 +50,24 @@ jobs:
             </defs>
 
             <!-- Bordure arrondie -->
-            <rect x="0" y="0" width="180" height="28" rx="5" ry="5" fill="none" stroke="#444" stroke-width="0.6"/>
+            <rect x="0" y="0" width="150" height="30" rx="5" ry="5" fill="none" stroke="#444" stroke-width="0.6"/>
 
             <!-- Parties du badge -->
-            <polygon points="0,0 115,0 123,28 0,28" fill="url(#gradLeft)" />
-            <polygon points="115,0 180,0 180,28 123,28" fill="url(#gradRight)" />
+            <polygon points="0,0 90,0 98,30 0,30" fill="url(#gradLeft)" />
+            <polygon points="90,0 150,0 150,30 98,30" fill="url(#gradRight)" />
 
             <!-- Texte gauche -->
-            <text x="57.5" y="18" fill="#fff" font-family="Montserrat,system-ui,sans-serif" font-size="10" text-anchor="middle" font-weight="600" text-transform="uppercase" filter="url(#textShadow)">
+            <text x="45" y="19" fill="#fff" font-family="Montserrat,system-ui,sans-serif" font-size="10" text-anchor="middle" font-weight="600" text-transform="uppercase" filter="url(#textShadow)">
               42 SCHOOL
             </text>
 
             <!-- Texte droite avec flèche unique collée -->
-            <text x="149.5" y="18" font-family="Montserrat,system-ui,sans-serif" font-size="10" text-anchor="middle" font-weight="600" fill="#fff" text-transform="uppercase" filter="url(#textShadow)">
+            <text x="124" y="19" font-family="Montserrat,system-ui,sans-serif" font-size="10" text-anchor="middle" font-weight="600" fill="#fff" text-transform="uppercase" filter="url(#textShadow)">
               $COMMIT_COUNT<tspan dx="2" fill="#4caf50" font-weight="600">⇵</tspan>
             </text>
           </svg>
           EOF
+
 
 
 
