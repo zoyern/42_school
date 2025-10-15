@@ -45,7 +45,7 @@ jobs:
 
               <!-- Ombre pour texte -->
               <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
-                <feDropShadow dx="0" dy="1" stdDeviation="0.3" flood-color="#000" flood-opacity="0.3"/>
+                <feDropShadow dx="0" dy="1" stdDeviation="0.3" flood-color="#000" flood-opacity="0.25"/>
               </filter>
             </defs>
 
@@ -57,18 +57,17 @@ jobs:
             <polygon points="115,0 180,0 180,28 123,28" fill="url(#gradRight)" />
 
             <!-- Texte gauche -->
-            <text x="57.5" y="18" fill="#fff" font-family="Montserrat,system-ui,sans-serif" font-size="11" text-anchor="middle" font-weight="600" text-transform="uppercase" filter="url(#textShadow)">
+            <text x="57.5" y="18" fill="#fff" font-family="Montserrat,system-ui,sans-serif" font-size="10" text-anchor="middle" font-weight="600" text-transform="uppercase" filter="url(#textShadow)">
               42 SCHOOL
             </text>
 
-            <!-- Texte droite avec double flèche vert/bleu -->
-            <text x="149.5" y="18" font-family="Montserrat,system-ui,sans-serif" font-size="11" text-anchor="middle" font-weight="600" fill="#fff" text-transform="uppercase" filter="url(#textShadow)">
-              $COMMIT_COUNT
-              <tspan dx="3" fill="#4caf50" font-weight="700">⇧</tspan>
-              <tspan dx="1" fill="#2196f3" font-weight="700">⇩</tspan>
+            <!-- Texte droite avec flèche unique collée -->
+            <text x="149.5" y="18" font-family="Montserrat,system-ui,sans-serif" font-size="10" text-anchor="middle" font-weight="600" fill="#fff" text-transform="uppercase" filter="url(#textShadow)">
+              $COMMIT_COUNT<tspan dx="2" fill="#4caf50" font-weight="600">⇵</tspan>
             </text>
           </svg>
           EOF
+
 
 
       - name: Commit badge to zoyern/zoyern repo
