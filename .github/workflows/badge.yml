@@ -1,13 +1,10 @@
 name: Update Commit Count Badge
-
 on:
   push:
     branches: [ main ]
   workflow_dispatch:
-
 permissions:
   contents: read
-
 jobs:
   update-badge:
     runs-on: ubuntu-latest
@@ -16,25 +13,22 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - name: Count commits
         id: count
         run: |
           COMMIT_COUNT=$(git rev-list --count main)
           echo "count=$COMMIT_COUNT" >> $GITHUB_OUTPUT
-
-      - name: Checkout badges repo
+      - name: Checkout zoyern/zoyern repo
         uses: actions/checkout@v4
         with:
-          repository: zoyern/badges
+          repository: zoyern/zoyern
           token: ${{ secrets.BADGE_TOKEN }}
-          path: badges-repo
-
+          path: zoyern-repo
       - name: Generate badge
         run: |
           COMMIT_COUNT=${{ steps.count.outputs.count }}
-          mkdir -p badges-repo
-          cat > badges-repo/42_school_projects_commits.svg << EOF
+          mkdir -p zoyern-repo/assets/badges
+          cat > zoyern-repo/assets/badges/42_school_projects_commits.svg << EOF
           <svg xmlns="http://www.w3.org/2000/svg" width="180" height="28">
             <defs>
               <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -54,12 +48,11 @@ jobs:
             <text x="149.5" y="18" fill="#fff" font-family="system-ui,-apple-system,sans-serif" font-size="11" text-anchor="middle" font-weight="600">$COMMIT_COUNT</text>
           </svg>
           EOF
-
-      - name: Commit badge to badges repo
+      - name: Commit badge to zoyern/zoyern repo
         run: |
-          cd badges-repo
+          cd zoyern-repo
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add 42_school_projects_commits.svg
+          git add assets/badges/42_school_projects_commits.svg
           git diff --quiet && git diff --staged --quiet || git commit -m "Update 42_school_projects: ${{ steps.count.outputs.count }} commits"
           git push
