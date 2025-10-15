@@ -31,26 +31,41 @@ jobs:
           cat > zoyern-repo/assets/badges/42_school_commits.svg << EOF
           <svg xmlns="http://www.w3.org/2000/svg" width="180" height="28">
             <defs>
-              <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" style="stop-color:#555;stop-opacity:1" />
-                <stop offset="100%" style="stop-color:#333;stop-opacity:1" />
+              <!-- Dégradé partie gauche -->
+              <linearGradient id="gradLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#666;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#444;stop-opacity:1" />
               </linearGradient>
-              <clipPath id="clip">
-                <polygon points="0,0 115,0 123,28 0,28" />
-              </clipPath>
-              <clipPath id="clip2">
-                <polygon points="115,0 180,0 180,28 123,28" />
-              </clipPath>
+
+              <!-- Dégradé partie droite -->
+              <linearGradient id="gradRight" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#888;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#555;stop-opacity:1" />
+              </linearGradient>
+
+              <!-- Ombre pour texte -->
+              <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="1" stdDeviation="0.3" flood-color="#000" flood-opacity="0.3"/>
+              </filter>
             </defs>
-            <polygon points="0,0 115,0 123,28 0,28" fill="url(#grad)" />
-            <polygon points="115,0 180,0 180,28 123,28" fill="#666" />
-            <text x="57.5" y="18" fill="#fff" font-family="system-ui,-apple-system,sans-serif" font-size="11" text-anchor="middle" font-weight="500">42 School</text>
-            <text x="149.5" y="18" font-family="system-ui,-apple-system,sans-serif" font-size="11" text-anchor="middle" font-weight="600" fill="#fff">
-              $COMMIT_COUNT 
-              <tspan fill="#4fc3f7">⇅</tspan>
+
+            <!-- Bordure arrondie -->
+            <rect x="0" y="0" width="180" height="28" rx="5" ry="5" fill="none" stroke="#444" stroke-width="0.6"/>
+
+            <!-- Parties du badge -->
+            <polygon points="0,0 115,0 123,28 0,28" fill="url(#gradLeft)" />
+            <polygon points="115,0 180,0 180,28 123,28" fill="url(#gradRight)" />
+
+            <!-- Texte gauche -->
+            <text x="57.5" y="18" fill="#fff" font-family="Montserrat,system-ui,sans-serif" font-size="11" text-anchor="middle" font-weight="900" text-transform="uppercase" filter="url(#textShadow)">42 SCHOOL</text>
+
+            <!-- Texte droite avec flèche colorée -->
+            <text x="149.5" y="18" font-family="Montserrat,system-ui,sans-serif" font-size="11" text-anchor="middle" font-weight="900" fill="#fff" text-transform="uppercase" filter="url(#textShadow)">
+              $COMMIT_COUNT<tspan dx="3" fill="#4fc3f7" stroke="#2a8bd1" stroke-width="0.2">⇅</tspan>
             </text>
           </svg>
           EOF
+
       - name: Commit badge to zoyern/zoyern repo
         run: |
           cd zoyern-repo
