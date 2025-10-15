@@ -45,7 +45,10 @@ jobs:
             <polygon points="0,0 115,0 123,28 0,28" fill="url(#grad)" />
             <polygon points="115,0 180,0 180,28 123,28" fill="#666" />
             <text x="57.5" y="18" fill="#fff" font-family="system-ui,-apple-system,sans-serif" font-size="11" text-anchor="middle" font-weight="500">42 School</text>
-            <text x="149.5" y="18" fill="#fff" font-family="system-ui,-apple-system,sans-serif" font-size="11" text-anchor="middle" font-weight="600">$COMMIT_COUNT ⇅ </text>
+            <text x="149.5" y="18" font-family="system-ui,-apple-system,sans-serif" font-size="11" text-anchor="middle" font-weight="600" fill="#fff">
+              $COMMIT_COUNT 
+              <tspan fill="#4fc3f7">⇅</tspan>
+            </text>
           </svg>
           EOF
       - name: Commit badge to zoyern/zoyern repo
