@@ -76,6 +76,8 @@
 						alt="42_school ">
 				</a>
 			</td>
+		</tr>
+		<tr>
 			<td align="center" width="100%">
 				<a href="https://github.com/zoyern/42_school">
 					<img src="https://raw.githubusercontent.com/zoyern/zoyern/main/assets/navigation/42_school_commits.svg?raw=true"
@@ -123,5 +125,6 @@
 		</td>
 	</tr>
 </table>
+
 
 
