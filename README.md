@@ -66,7 +66,7 @@
 		</td>
 	</tr>
 		<tr>
-			<td align="center" colspan="3" width="100%">
+			<td align="center" width="100%">
 				<a href="https://github.com/zoyern/42_school">
 					<img src="https://raw.githubusercontent.com/zoyern/zoyern/main/assets/navigation/42_school_commits.svg?raw=true"
 						alt="42_school ">
@@ -76,7 +76,7 @@
 						alt="42_school ">
 				</a>
 			</td>
-			<td align="center" colspan="3" width="100%">
+			<td align="center" width="100%">
 				<a href="https://github.com/zoyern/42_school">
 					<img src="https://raw.githubusercontent.com/zoyern/zoyern/main/assets/navigation/42_school_commits.svg?raw=true"
 						alt="42_school ">
@@ -123,4 +123,5 @@
 		</td>
 	</tr>
 </table>
+
 
