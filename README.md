@@ -65,61 +65,26 @@
 			<b>is about...</b>
 		</td>
 	</tr>
-<tr>
-	<td align="center" colspan="3" width="100%">
-<table align="center">
-<tr>
-<td>
-<table border="0" cellspacing="30">
-<tr>
-<td>&nbsp;</td> <!-- Décalage gauche pour overflow -->
-<td align="center">
-<a href="#"><img src="https://img.shields.io/badge/-root-ff69b4?style=flat-square"></a>
-
-<table border="0" cellspacing="20">
-<tr>
-<td align="center">
-<a href="#"><img src="https://img.shields.io/badge/-Makefile-9cf?style=flat-square"></a>
-</td>
-<td align="center">
-<a href="#"><img src="https://img.shields.io/badge/-README.md-9cf?style=flat-square"></a>
-</td>
-<td align="center">
-<a href="#"><img src="https://img.shields.io/badge/-builds-4287f5?style=flat-square"></a>
-
-<table border="0" cellspacing="15">
-<tr>
-<td align="center">
-<a href="#"><img src="https://img.shields.io/badge/-dep-6f42c1?style=flat-square"></a>
-<table border="0" cellspacing="10">
-<tr>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllChannel.d-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllClient.d-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllErrors.d-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllEvent.d-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllHook.d-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllMessage.d-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllNetwork.d-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllProtocol.d-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllRouter.d-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllServer.d-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllSignals.d-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-Sockell.d-f7b?style=flat-square"></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-
-</td>
-<td>&nbsp;</td> <!-- Décalage droite pour overflow -->
-</tr>
-</table>
-</td>
-
-</tr>
-</table>
-</tr>
+		<tr>
+			<td align="center" td colspan="3" width="100%">
+				<a href="https://github.com/zoyern/42_school">
+					<img src="https://raw.githubusercontent.com/zoyern/zoyern/main/assets/navigation/42_school_commits.svg?raw=true"
+						alt="42_school ">
+				</a>
+				<a href="https://github.com/zoyern/42_school">
+					<img src="https://raw.githubusercontent.com/zoyern/zoyern/main/assets/navigation/42_school_commits.svg?raw=true"
+						alt="42_school ">
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" td colspan="3" width="100%">
+				<a href="https://github.com/zoyern/42_school">
+					<img src="https://raw.githubusercontent.com/zoyern/zoyern/main/assets/navigation/42_school_commits.svg?raw=true"
+						alt="42_school ">
+				</a>
+			</td>
+		</tr>
 		<!-- Séparateur -->
 		<tr>
 			<td colspan="3">
@@ -160,6 +125,7 @@
 		</td>
 	</tr>
 </table>
+
 
 
 
