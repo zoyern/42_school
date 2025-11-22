@@ -68,36 +68,39 @@
 <tr>
 <td align="center" colspan="3">
 
-<b>Project Structure</b><br><br>
-
-<a href="#"><img src="https://img.shields.io/badge/-Makefile-ff69b4?style=flat-square"></a><br>
-
-<a href="#"><img src="https://img.shields.io/badge/-includes-4287f5?style=flat-square"></a>
-<div style="margin-left: 20px;">
-  <a href="#"><img src="https://img.shields.io/badge/-Sockell-6a5acd?style=flat-square"></a>
-  <div style="margin-left: 20px;">
-    <a href="#"><img src="https://img.shields.io/badge/-SkllServer.hpp-9cf?style=flat-square"></a><br>
-    <a href="#"><img src="https://img.shields.io/badge/-SkllClient.hpp-9cf?style=flat-square"></a><br>
-    <a href="#"><img src="https://img.shields.io/badge/-SkllNetwork.hpp-9cf?style=flat-square"></a><br>
-    <a href="#"><img src="https://img.shields.io/badge/-SkllEvent.hpp-9cf?style=flat-square"></a>
-  </div>
-</div>
-
-<a href="#"><img src="https://img.shields.io/badge/-main-8f8?style=flat-square"></a>
-<div style="margin-left: 20px;">
-  <a href="#"><img src="https://img.shields.io/badge/-IRCCommands.cpp-f7b?style=flat-square"></a><br>
-  <a href="#"><img src="https://img.shields.io/badge/-IRCServer.cpp-f7b?style=flat-square"></a><br>
-  <a href="#"><img src="https://img.shields.io/badge/-IRCClient.cpp-f7b?style=flat-square"></a><br>
-  <a href="#"><img src="https://img.shields.io/badge/-IRCChannel.cpp-f7b?style=flat-square"></a>
-</div>
-
-<a href="#"><img src="https://img.shields.io/badge/-src-6a0dad?style=flat-square"></a>
-<div style="margin-left: 20px;">
-  <a href="#"><img src="https://img.shields.io/badge/-SkllServer.cpp-9cf?style=flat-square"></a><br>
-  <a href="#"><img src="https://img.shields.io/badge/-SkllClient.cpp-9cf?style=flat-square"></a>
-</div>
-
-<a href="#"><img src="https://img.shields.io/badge/-ircserv-ff7f50?style=flat-square"></a>
+<table border="0" cellspacing="10">
+  <!-- Niveau 1 -->
+  <tr>
+    <td align="center">
+      <a href="#"><img src="https://img.shields.io/badge/-project-root-ff69b4?style=flat-square"></a>
+      <!-- Niveau 2 -->
+      <table border="0" cellspacing="20">
+        <tr>
+          <td align="center">
+            <a href="#"><img src="https://img.shields.io/badge/-includes-4287f5?style=flat-square"></a>
+            <!-- Niveau 3 -->
+            <table border="0" cellspacing="10">
+              <tr>
+                <td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllServer.hpp-9cf?style=flat-square"></a></td>
+                <td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllClient.hpp-9cf?style=flat-square"></a></td>
+                <td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllNetwork.hpp-9cf?style=flat-square"></a></td>
+              </tr>
+            </table>
+          </td>
+          <td align="center">
+            <a href="#"><img src="https://img.shields.io/badge/-main-8f8?style=flat-square"></a>
+            <table border="0" cellspacing="10">
+              <tr>
+                <td align="center"><a href="#"><img src="https://img.shields.io/badge/-IRCCommands.cpp-f7b?style=flat-square"></a></td>
+                <td align="center"><a href="#"><img src="https://img.shields.io/badge/-IRCServer.cpp-f7b?style=flat-square"></a></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
 
 </td>
 </tr>
@@ -141,6 +144,7 @@
 		</td>
 	</tr>
 </table>
+
 
 
 
