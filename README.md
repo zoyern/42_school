@@ -66,12 +66,12 @@
 		</td>
 	</tr>
 <tr>
-<td align="center" colspan="3">
-
-<div style="overflow:auto; width:100%; max-height:800px; padding-top:80px;">
-
-<table border="0" cellspacing="20" align="center">
+<table align="center">
 <tr>
+<td>
+<table border="0" cellspacing="30">
+<tr>
+<td>&nbsp;</td> <!-- Décalage gauche pour overflow -->
 <td align="center">
 <a href="#"><img src="https://img.shields.io/badge/-root-ff69b4?style=flat-square"></a>
 
@@ -109,11 +109,11 @@
 </td>
 </tr>
 </table>
+
 </td>
+<td>&nbsp;</td> <!-- Décalage droite pour overflow -->
 </tr>
 </table>
-
-</div>
 </td>
 </tr>
 </table>
@@ -157,4 +157,5 @@
 		</td>
 	</tr>
 </table>
+
 
