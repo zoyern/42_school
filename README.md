@@ -66,6 +66,7 @@
 		</td>
 	</tr>
 <tr>
+	<td align="center" colspan="3" width="100%">
 <table align="center">
 <tr>
 <td>
@@ -115,8 +116,10 @@
 </tr>
 </table>
 </td>
+
 </tr>
 </table>
+</tr>
 		<!-- Séparateur -->
 		<tr>
 			<td colspan="3">
@@ -157,5 +160,6 @@
 		</td>
 	</tr>
 </table>
+
 
 
