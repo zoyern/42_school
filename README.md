@@ -65,12 +65,12 @@
 			<b>is about...</b>
 		</td>
 	</tr>
-
-
 <tr>
 <td align="center" colspan="3">
 
-<table border="0" cellspacing="20">
+<div style="overflow:auto; width:100%; max-height:800px; padding-top:80px;">
+
+<table border="0" cellspacing="20" align="center">
 <tr>
 <td align="center">
 <a href="#"><img src="https://img.shields.io/badge/-root-ff69b4?style=flat-square"></a>
@@ -107,150 +107,16 @@
 </tr>
 </table>
 </td>
-
-<td align="center">
-<a href="#"><img src="https://img.shields.io/badge/-lib-8f8?style=flat-square"></a>
-<table border="0" cellspacing="10">
-<tr><td align="center"><a href="#"><img src="https://img.shields.io/badge/-libsockell.a-9cf?style=flat-square"></a></td></tr>
-</table>
-</td>
-
-<td align="center">
-<a href="#"><img src="https://img.shields.io/badge/-obj-8f8?style=flat-square"></a>
-<table border="0" cellspacing="10">
-<tr>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllChannel.o-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllClient.o-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllErrors.o-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllEvent.o-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllHook.o-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllMessage.o-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllNetwork.o-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllProtocol.o-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllRouter.o-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllServer.o-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllSignals.o-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-Sockell.o-f7b?style=flat-square"></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-
-<tr>
-<td align="center">
-<a href="#"><img src="https://img.shields.io/badge/-includes-4287f5?style=flat-square"></a>
-<table border="0" cellspacing="10">
-<tr>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-Sockall.hpp-9cf?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-Sockell-6f42c1?style=flat-square"></a>
-<table border="0" cellspacing="10">
-<tr>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllChannel.hpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllClient.hpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllErrors.hpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllEvent.hpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllHook.hpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllMessage.hpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllNetwork.hpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllProtocol.hpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllRouter.hpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllServer.hpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllSignals.hpp-f7b?style=flat-square"></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-
-<tr>
-<td align="center">
-<a href="#"><img src="https://img.shields.io/badge/-ircserv-8f8?style=flat-square"></a>
-</td>
-<td align="center">
-<a href="#"><img src="https://img.shields.io/badge/-main-8f8?style=flat-square"></a>
-<table border="0" cellspacing="15">
-<tr>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-build.mk-9cf?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-builds-4287f5?style=flat-square"></a>
-<table border="0" cellspacing="10">
-<tr>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-dep-6f42c1?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-lib-8f8?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-obj-8f8?style=flat-square"></a></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-includes-4287f5?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-main.cpp-9cf?style=flat-square"></a></td>
-</tr>
-<tr>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-src-6f42c1?style=flat-square"></a>
-<table border="0" cellspacing="10">
-<tr>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-IRC.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-IRCChannel.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-IRCClient.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-IRCCommands.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-IRCErrors.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-IRCServer.cpp-f7b?style=flat-square"></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-src-6f42c1?style=flat-square"></a>
-<table border="0" cellspacing="10">
-<tr>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllChannel.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllClient.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllErrors.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllEvent.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllHook.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllMessage.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllNetwork.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllProtocol.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllRouter.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllServer.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-SkllSignals.cpp-f7b?style=flat-square"></a></td>
-<td align="center"><a href="#"><img src="https://img.shields.io/badge/-Sockell.cpp-f7b?style=flat-square"></a></td>
 </tr>
 </table>
 </td>
 </tr>
 </table>
 
+</div>
 </td>
 </tr>
 </table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-
-
-
 		<!-- Séparateur -->
 		<tr>
 			<td colspan="3">
@@ -291,3 +157,4 @@
 		</td>
 	</tr>
 </table>
+
